@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j69-hX-O8z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="19Y-A7-m1y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,8 +13,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="Yzz-hi-u0v">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6f2-yZ-Fuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="CalendarViewController" id="j69-hX-O8z" customClass="CalendarViewController" customModule="MyEF_2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalendarViewController" id="j69-hX-O8z" customClass="CalendarViewController" customModule="SampleCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="izc-Db-0zK"/>
                         <viewControllerLayoutGuide type="bottom" id="WE9-En-1qC"/>
@@ -86,7 +85,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalendarDateCell" reuseIdentifier="CalendarDateCell" id="x0T-jk-hdH" customClass="CalendarDateCell" customModule="MyEF_2018" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalendarDateCell" reuseIdentifier="CalendarDateCell" id="x0T-jk-hdH" customClass="CalendarDateCell" customModule="SampleCalendar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -207,19 +206,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sQs-Be-Ufv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e6z-Hi-m8v"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="monthAndYearLbl" destination="k0X-7g-gNc" id="RK8-H7-KFp"/>
                         <outlet property="monthCollectionView" destination="Olg-jL-GXb" id="C6Z-9w-Bh5"/>
                         <outlet property="showTodayButton" destination="OSi-xK-7G5" id="A01-Zx-YOs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6f2-yZ-Fuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1693.5999999999999" y="3233.4332833583212"/>
+            <point key="canvasLocation" x="2632.8000000000002" y="3233.4332833583212"/>
         </scene>
         <!--Calendar Week View Controller-->
         <scene sceneID="cuK-Af-vax">
             <objects>
-                <viewController storyboardIdentifier="CalendarWeekViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ygx-go-5xG" customClass="CalendarWeekViewController" customModule="MyEF_2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalendarWeekViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ygx-go-5xG" customClass="CalendarWeekViewController" customModule="SampleCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zv9-Bg-pnG"/>
                         <viewControllerLayoutGuide type="bottom" id="CPJ-Vs-kIy"/>
@@ -228,18 +230,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bb-bU-3P7" customClass="ADVSegmentedControl" customModule="MyEF_2018">
-                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="jkO-My-Aa3"/>
-                                </constraints>
-                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAV-Pu-UdF">
-                                <rect key="frame" x="0.0" y="98" width="375" height="569"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ppp-ab-43b">
-                                        <rect key="frame" x="5" y="-7" width="370" height="914.5"/>
+                                        <rect key="frame" x="5" y="0.0" width="370" height="914.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Xx3-23-ikp" userLabel="07">
                                                 <rect key="frame" x="0.0" y="0.0" width="370" height="14.5"/>
@@ -342,8 +337,8 @@
                                                         </constraints>
                                                         <variation key="default">
                                                             <mask key="constraints">
-                                                                <exclude reference="sf4-2h-zKy"/>
                                                                 <exclude reference="nyE-yr-gEp"/>
+                                                                <exclude reference="sf4-2h-zKy"/>
                                                             </mask>
                                                         </variation>
                                                     </imageView>
@@ -367,8 +362,8 @@
                                                         </constraints>
                                                         <variation key="default">
                                                             <mask key="constraints">
-                                                                <exclude reference="dsB-uu-L2R"/>
                                                                 <exclude reference="8rH-87-UIE"/>
+                                                                <exclude reference="dsB-uu-L2R"/>
                                                             </mask>
                                                         </variation>
                                                     </imageView>
@@ -392,8 +387,8 @@
                                                         </constraints>
                                                         <variation key="default">
                                                             <mask key="constraints">
-                                                                <exclude reference="fQa-0q-CBf"/>
                                                                 <exclude reference="aLr-Zf-OAL"/>
+                                                                <exclude reference="fQa-0q-CBf"/>
                                                             </mask>
                                                         </variation>
                                                     </imageView>
@@ -492,8 +487,8 @@
                                                         </constraints>
                                                         <variation key="default">
                                                             <mask key="constraints">
-                                                                <exclude reference="fBx-B6-gXM"/>
                                                                 <exclude reference="bqe-3L-fGt"/>
+                                                                <exclude reference="fBx-B6-gXM"/>
                                                             </mask>
                                                         </variation>
                                                     </imageView>
@@ -674,7 +669,7 @@
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ppp-ab-43b" firstAttribute="leading" secondItem="dAV-Pu-UdF" secondAttribute="leading" constant="5" id="5Fe-dS-WMM"/>
-                                    <constraint firstItem="Ppp-ab-43b" firstAttribute="top" secondItem="dAV-Pu-UdF" secondAttribute="top" constant="-7" id="9Dl-Sc-kip"/>
+                                    <constraint firstItem="Ppp-ab-43b" firstAttribute="top" secondItem="dAV-Pu-UdF" secondAttribute="top" id="9Dl-Sc-kip"/>
                                     <constraint firstItem="X4p-3a-Fhu" firstAttribute="top" secondItem="dAV-Pu-UdF" secondAttribute="top" constant="14" id="a2U-hb-Ujw"/>
                                     <constraint firstAttribute="bottom" secondItem="Ppp-ab-43b" secondAttribute="bottom" id="a4k-zc-PMW"/>
                                     <constraint firstItem="2Nj-Vn-rkC" firstAttribute="width" secondItem="gkd-7X-9ep" secondAttribute="width" id="dCW-Xa-YAv"/>
@@ -688,13 +683,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Bb-bU-3P7" firstAttribute="width" secondItem="wtD-Ke-yLy" secondAttribute="width" id="1Rm-e9-eRn"/>
                             <constraint firstItem="dAV-Pu-UdF" firstAttribute="width" secondItem="wtD-Ke-yLy" secondAttribute="width" id="7Z6-8B-7ur"/>
-                            <constraint firstItem="1Bb-bU-3P7" firstAttribute="centerX" secondItem="wtD-Ke-yLy" secondAttribute="centerX" id="ICL-tF-kC2"/>
-                            <constraint firstItem="1Bb-bU-3P7" firstAttribute="top" secondItem="Zv9-Bg-pnG" secondAttribute="bottom" constant="8" id="KjL-vS-GLp"/>
-                            <constraint firstItem="dAV-Pu-UdF" firstAttribute="top" secondItem="1Bb-bU-3P7" secondAttribute="bottom" id="XlD-ax-2Co"/>
-                            <constraint firstItem="dAV-Pu-UdF" firstAttribute="centerX" secondItem="1Bb-bU-3P7" secondAttribute="centerX" id="cRK-eR-9fA"/>
+                            <constraint firstItem="dAV-Pu-UdF" firstAttribute="top" secondItem="sdx-a9-go3" secondAttribute="top" id="DbV-x8-t8Q"/>
                             <constraint firstItem="oRd-wK-zps" firstAttribute="width" secondItem="wtD-Ke-yLy" secondAttribute="width" constant="-50" id="sv1-II-Alf"/>
+                            <constraint firstItem="dAV-Pu-UdF" firstAttribute="centerX" secondItem="sdx-a9-go3" secondAttribute="centerX" id="uXP-Wg-gNs"/>
                             <constraint firstItem="CPJ-Vs-kIy" firstAttribute="top" secondItem="dAV-Pu-UdF" secondAttribute="bottom" id="wpU-Ar-th0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sdx-a9-go3"/>
@@ -704,12 +696,29 @@
                         <outlet property="currentTimeLbl" destination="rOt-0a-Mvq" id="p1F-gy-0CI"/>
                         <outlet property="dynamicTimeConstraint" destination="a2U-hb-Ujw" id="Uq9-Rf-DwU"/>
                         <outlet property="mainScrollView" destination="dAV-Pu-UdF" id="sOB-pQ-asS"/>
-                        <outlet property="weekSegment" destination="1Bb-bU-3P7" id="hbE-Um-rhb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ag-8n-Uc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1693.5999999999999" y="3912.5937031484259"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pzx-zP-vuW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="19Y-A7-m1y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CeC-tp-ncz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j69-hX-O8z" kind="relationship" relationship="rootViewController" id="nXy-cu-w1I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRB-Es-QAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693.5999999999999" y="3233.4332833583212"/>
         </scene>
     </scenes>
     <resources>
