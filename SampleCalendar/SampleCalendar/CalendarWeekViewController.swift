@@ -19,7 +19,7 @@ class CalendarWeekViewController: UIViewController {
         super.viewDidLoad()
         
         self.dynamicTimeConstraint.constant = 0
-        
+        self.updateCurrentTime()
         Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(CalendarWeekViewController.updateCurrentTime), userInfo: nil, repeats: true)
         
         // Do any additional setup after loading the view.
@@ -33,7 +33,7 @@ class CalendarWeekViewController: UIViewController {
     @objc func updateCurrentTime() {
         let time = Date()
         
-        dynamicTimeConstraint.constant = self.getTimePoint(time: time) - 8
+        dynamicTimeConstraint.constant = self.getTimePoint(time: time)
         
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
