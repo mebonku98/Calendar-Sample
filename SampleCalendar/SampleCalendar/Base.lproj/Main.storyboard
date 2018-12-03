@@ -134,7 +134,7 @@
                                     <constraint firstAttribute="width" secondItem="CqS-tp-ic4" secondAttribute="height" id="EXU-bd-gg1"/>
                                     <constraint firstAttribute="height" constant="40" id="sLw-wk-DZP"/>
                                 </constraints>
-                                <state key="normal" image="back"/>
+                                <state key="normal" title="&lt;"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -150,7 +150,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Vft-eu-up3" secondAttribute="height" id="b2X-vB-0ui"/>
                                 </constraints>
-                                <state key="normal" image="right-arrow"/>
+                                <state key="normal" title="&gt;"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -721,8 +721,4 @@
             <point key="canvasLocation" x="1693.5999999999999" y="3233.4332833583212"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="back" width="16" height="16"/>
-        <image name="right-arrow" width="16" height="16"/>
-    </resources>
 </document>
