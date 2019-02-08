@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="IlS-Ja-sk0">
+                                <rect key="frame" x="20" y="452" width="335" height="174"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iq5-ts-TBD">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="174"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V3M-yu-Vbe">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMf-cD-YZB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJd-Dy-weA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beY-yV-xdk">
+                                                        <rect key="frame" x="64" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DYH-sH-Xtd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-aO-c1G">
+                                                        <rect key="frame" x="128" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ozt-UY-eRY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-zT-2GY">
+                                                <rect key="frame" x="0.0" y="46" width="187" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2Z-zJ-SH6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZuN-oU-xDz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02J-iD-Sqn">
+                                                        <rect key="frame" x="64" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWn-9w-oiH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K82-Pv-hQG">
+                                                        <rect key="frame" x="128" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8c-EM-lNR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PZR-dY-HdY">
+                                                <rect key="frame" x="0.0" y="92" width="187" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQS-f3-TFp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2DF-ef-GBs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igp-G7-UWc">
+                                                        <rect key="frame" x="64" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tA-wb-AXz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czw-82-YRn">
+                                                        <rect key="frame" x="128" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4b-PY-Dvn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yjc-KT-bwV">
+                                                <rect key="frame" x="0.0" y="138" width="187" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI6-JF-Ne9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fw3-4q-5zs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOe-PF-sz8">
+                                                        <rect key="frame" x="64" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWI-bl-rSp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH2-Jk-Ikf">
+                                                        <rect key="frame" x="128" y="0.0" width="59" height="36"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="+/-">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0dX-O4-GYs">
+                                        <rect key="frame" x="201" y="0.0" width="134" height="174"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gSK-HE-fCR">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="51.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efB-Hf-MYP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="ac">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agN-zE-ChS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miR-GG-Wi3">
+                                                        <rect key="frame" x="69.666666666666686" y="0.0" width="64.333333333333314" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="1" green="0.70980392160000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="s4d-6W-aVq">
+                                                <rect key="frame" x="0.0" y="61.333333333333371" width="134" height="51.333333333333343"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-1E-3dI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="x">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="formulaButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBg-Qj-q6e"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-ys-5kn">
+                                                        <rect key="frame" x="69.666666666666686" y="0.0" width="64.333333333333314" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="formulaButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geN-8g-fIK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aTy-uv-9nm">
+                                                <rect key="frame" x="0.0" y="122.66666666666661" width="134" height="51.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAS-h5-CD7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="formulaButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1A-R8-Ogu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onj-zT-U9X">
+                                                        <rect key="frame" x="69.666666666666686" y="0.0" width="64.333333333333314" height="51.333333333333336"/>
+                                                        <color key="backgroundColor" red="0.98548370600000001" green="0.96228107976061006" blue="0.73939732547047299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                                        <color key="tintColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" red="0.4039215686" green="0.50588235290000005" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="formulaButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r2H-0N-719"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXK-z5-HVe">
+                                <rect key="frame" x="10" y="369.66666666666669" width="355" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1u-yF-azV">
+                                <rect key="frame" x="10" y="410" width="355" height="2"/>
+                                <color key="backgroundColor" red="0.98548370600000001" green="0.96228107979999999" blue="0.73939732550000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="bbU-sB-c5V"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I1u-yF-azV" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2WZ-CU-3R1"/>
+                            <constraint firstItem="I1u-yF-azV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H2y-I7-oHt"/>
+                            <constraint firstItem="I1u-yF-azV" firstAttribute="top" secondItem="iXK-z5-HVe" secondAttribute="bottom" constant="20" id="Jdq-9Q-11n"/>
+                            <constraint firstItem="IlS-Ja-sk0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KJn-5b-DgH"/>
+                            <constraint firstItem="IlS-Ja-sk0" firstAttribute="top" secondItem="I1u-yF-azV" secondAttribute="bottom" constant="40" id="LS4-Pz-c7T"/>
+                            <constraint firstItem="I1u-yF-azV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-20" id="XcW-0F-xl4"/>
+                            <constraint firstItem="iXK-z5-HVe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a1P-O1-dp5"/>
+                            <constraint firstItem="IlS-Ja-sk0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="iLk-gZ-Jp8"/>
+                            <constraint firstItem="iXK-z5-HVe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-20" id="jhb-E9-OCj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="formulaLabel" destination="iXK-z5-HVe" id="asD-CL-7fb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+</document>
